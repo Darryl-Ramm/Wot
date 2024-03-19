@@ -1,11 +1,11 @@
- Wot: Wot WHAT is what? Unexpected behavior from CoreAudio.
+# Wot: Wot WHAT is what? Unexpected behavior from CoreAudio.
 
  A CoreAudio command line program can show getting 'WHAT' instead of 'what' as an
  return/error code from AudioObjectGetPropertyData(). I see that error code
  when attempting to get the Channel Number Name or the Channel Category Name
  for my iPhone Microphone or the MacBook Pro Microphone audio devices.
  
- Running macOS 14.4 Sonoma on a Intel MacBook Pro 15" 2019.
+ I am running macOS 14.4 Sonoma on a Intel MacBook Pro 15" 2019.
  
  This program loops though all audio devices on a system, and all channels on 
  each device. Uses AudioObjectGetPropertyData() to get the device name and
@@ -22,7 +22,7 @@
  AudioObjectGetPropertyData() call with the exact same AudioObjectPropertyAddress
  returns with an error code 'WHAT'.
  
- I expect that 
+ I expect that:
  
  1. If AudioObjectHasProperty() returns TRUE that the matching
     AudioObjectGetPropertyData() works.
