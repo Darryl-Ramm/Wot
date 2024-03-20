@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		58712E8E2BA7C3C600A148DC /* Wot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Wot; sourceTree = BUILT_PRODUCTS_DIR; };
 		58712E912BA7C3C600A148DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58712E9E2BAA7E7500A148DC /* Wot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Wot.xcodeproj; sourceTree = "<group>"; };
+		58712EA22BAA7ECF00A148DC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,8 @@
 		58712E852BA7C3C600A148DC = {
 			isa = PBXGroup;
 			children = (
+				58712E9E2BAA7E7500A148DC /* Wot.xcodeproj */,
+				58712EA22BAA7ECF00A148DC /* README.md */,
 				58712E902BA7C3C600A148DC /* Wot */,
 				58712E8F2BA7C3C600A148DC /* Products */,
 			);
@@ -60,6 +64,11 @@
 				58712E912BA7C3C600A148DC /* main.m */,
 			);
 			path = Wot;
+			sourceTree = "<group>";
+		};
+		58712E9F2BAA7E7500A148DC /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +116,12 @@
 			mainGroup = 58712E852BA7C3C600A148DC;
 			productRefGroup = 58712E8F2BA7C3C600A148DC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 58712E9F2BAA7E7500A148DC /* Products */;
+					ProjectRef = 58712E9E2BAA7E7500A148DC /* Wot.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				58712E8D2BA7C3C600A148DC /* Wot */,

@@ -4,16 +4,19 @@
  
  main.m
  
+ A question about this also posted to the Apple Developer Forum:
+ https://developer.apple.com/forums/thread/748749
+ 
  A demonstration that can show getting 'WHAT' instead of 'what' as an
  return/error code from AudioObjectGetPropertyData(). I see that error code
  when attempting to get the Channel Number Name or the Channel Category Name
- for my iPhone Microphone or the MacBook Pro Microphone audio devices.
+ for the iPhone Microphone or the MacBook Pro Microphone audio devices.
  
  Running macOS 14.4 Sonoma on a Intel MacBook Pro 15" 2019.
  
  This program loops though all audio devices on a system, and all channels on 
  each device. Uses AudioObjectGetPropertyData() to get the device name and
- manufacturer name and then iterate over the input and output channels getting
+ manufacturer name and then iterates over the input and output channels getting
  Channel Number Name, Channel Name and Channel Category.
  
  I would exect some of these values (like channel Name frequently is) to be 
@@ -34,7 +37,7 @@
  and
  
  2. What the hecks is 'WHAT'? If an error code is returned I assume it is 
-    supposed to mean 'what' aka kAudioHardwareUnspecifiedError then why is
+    supposed to mean 'what' aka kAudioHardwareUnspecifiedError.  Why is
     that actual error value not used?
  
  This program uses NSLog() instead of printf()/wprintf() to lazilly handle 
