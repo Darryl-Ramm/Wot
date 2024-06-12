@@ -1,5 +1,11 @@
 # Wot: Wot WHAT is what? Unexpected behavior from CoreAudio.
 
+ Quick Note: Apple has partially addressed the issues here in macOS Sequoia 15.0 
+ (24A5264n). However the bug with AudioObjectHasProperty() return TRUE when the 
+ matching AudioObjectGetPropertyData() does not work has not been fixed.
+
+ ---
+ 
  This CoreAudio command line program can show AudioObjectGetPropertyData() returning
 'WHAT' instead of 'what' as an error code. I see that incorrect/unexpected 'WHAT' 
  error code when attempting to get the Channel Number Name or the Channel Category Name
