@@ -1,8 +1,9 @@
 # Wot: Wot WHAT is what? Unexpected behavior from CoreAudio.
 
  Quick Note: Apple has partially addressed the issues here in macOS Sequoia 15.0 
- (24A5264n). However the bug with AudioObjectHasProperty() return TRUE when the 
- matching AudioObjectGetPropertyData() does not work has not been fixed.
+ (24A5264n). Where the error code 'what' is now correctly returned instead of 'WHAT'. 
+ However the bug with AudioObjectHasProperty() returning TRUE when the matching 
+ AudioObjectGetPropertyData() does not work has sofar not been fixed.
 
  ---
  
